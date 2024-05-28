@@ -9,15 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class De_Palletization {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		// Chrome
 		WebDriver driver = new ChromeDriver();
-
-		// Firefox
-//		WebDriver driver = new FirefoxDriver();
-
-		// Edge
-//		WebDriver driver = new EdgeDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
