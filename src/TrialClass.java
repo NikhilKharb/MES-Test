@@ -85,6 +85,8 @@ public class TrialClass {
 
 			driver.findElement(By.id("accordion")).click();
 			Thread.sleep(500);
+			System.out.println(k);
+
 			k++;
 
 		}
