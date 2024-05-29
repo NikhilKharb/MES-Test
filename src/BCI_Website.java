@@ -83,6 +83,16 @@ public class BCI_Website {
 			Integration_Inward.takeScreenshot(driver);
 			System.out.println(driver.getTitle());
 			
+			driver.switchTo().window(it.next());
+			Thread.sleep(1000);
+			Integration_Inward.takeScreenshot(driver);
+			System.out.println(driver.getTitle());
+			
+			driver.switchTo().window(it.next());
+			Thread.sleep(1000);
+			Integration_Inward.takeScreenshot(driver);
+			System.out.println(driver.getTitle());
+			
 		}
 
 		driver.quit();

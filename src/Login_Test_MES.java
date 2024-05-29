@@ -35,5 +35,12 @@ public class Login_Test_MES {
 		driver.quit();
 
 	}
+	public void getTitle() {
+		System.out.println("Login script run successfully");
+		System.out.println("Changes made randomly");
+		System.out.println("Test Run Successfully");
+		//driver.quit();
+
+	}
 
 }

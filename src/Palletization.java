@@ -13,11 +13,6 @@ public class Palletization {
 		// Chrome
 		WebDriver driver = new ChromeDriver();
 
-		// Firefox
-//		WebDriver driver = new FirefoxDriver();
-
-		// Edge
-//		WebDriver driver = new EdgeDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -48,6 +43,14 @@ public class Palletization {
 		for (int i = 0; i < itemcodes.length; i++) {
 			driver.findElement(By.id("Scan_Item")).sendKeys(itemcodes[i]);
 
+			Thread.sleep(500);
+			driver.findElement(By.xpath("//*[@id=\"accordion\"]/div/div/form")).click();
+			driver.findElement(By.id("Scan_Item")).clear();
+			
+			Thread.sleep(500);
+			driver.findElement(By.xpath("//*[@id=\"accordion\"]/div/div/form")).click();
+			driver.findElement(By.id("Scan_Item")).clear();
+			
 			Thread.sleep(500);
 			driver.findElement(By.xpath("//*[@id=\"accordion\"]/div/div/form")).click();
 			driver.findElement(By.id("Scan_Item")).clear();
